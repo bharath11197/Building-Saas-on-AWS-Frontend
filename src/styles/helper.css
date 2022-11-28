@@ -1,0 +1,135 @@
+.black__button {
+  border: 1px solid var(--color-black);
+  padding: 1rem 4rem;
+  width: 25rem;
+  color: var(--color-black);
+  border-radius: .5rem;
+  font-size: 1.8rem;
+  transition: all .6s ease-in-out;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.black__button:hover {
+  box-shadow: inset 25rem 0 0 0 var(--color-black);
+  color: #fff;
+}
+
+.white__button {
+  border: 1px solid var(--color-white);
+  color: var(--color-white);
+}
+
+.white__button:hover {
+  border: 1px solid var(--color-black);
+}
+
+
+.small__btn {
+  padding: .5rem 4rem;
+  font-size: 1.4rem;
+}
+
+.box {
+  padding: 2rem 4rem;
+  background: var(--color-primary-light) !important;
+}
+
+.box__design--title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.width-max-content {
+  width: max-content;
+}
+
+.icon {
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all .4s ease-in-out;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+.ant-upload-list-item,
+.ant-upload {
+  width: 15rem !important;
+  height: 15rem !important;
+}
+
+.ant-tooltip-content {
+  display: none;
+}
+
+.upload__thumbnail--wrapper .ant-row {
+  display: grid;
+  grid-template-columns: 1fr 80%;
+}
+
+.upload__thumbnail--wrapper .ant-col-4 {
+  max-width: 40rem !important;
+}
+
+.ant-skeleton-image {
+  min-width: 28rem !important;
+  height: 18rem !important;
+}
+
+@keyframes animateFromLeftToRight {
+  0% {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes animateFromRightToLeft {
+  0% {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes animateFromTopToBottom {
+  0% {
+    transform: translateY(-50%);
+    opacity: 0;
+    z-index: -1;
+  }
+
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  border: 1px solid #d9d9d9;
+  border-radius: 1rem !important;
+  height: 4rem !important;
+  box-shadow: 0 1.5rem 3rem #00000013;
+}
+
+.ant-select-selector {
+  display: flex;
+    align-items: center;
+}
+
+@media (max-width:900px) {
+  .box {
+    padding: 2rem 1rem;
+  }
+
+}

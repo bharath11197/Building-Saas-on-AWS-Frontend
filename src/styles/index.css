@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poiret+One&family=Sacramento&display=swap');
+@import 'helper';
+
+:root {
+  --color-primary: #e9f7bc42;
+  --color-primary-light: #FFECEF;
+  --color-primary-dark: #FFF5E4;
+
+  --color-grey: #3a3939;
+  --color-grey-light : #a09c9c6c;
+
+  --color-green: #C69749;
+  --color-black: #000;
+
+  --color-white: #fff;
+
+  --color-blue-dark: #251B37;
+  --color-blue-light: #87A2FB;
+  --border-light: 1px solid var(--color-white);
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  
+}
+
+body {
+  font-family: 'Poiret One', cursive;
+  font-family: 'Sacramento', cursive;
+  font-family: 'Montserrat', sans-serif !important;
+  background: var(--color-primary) !important;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+label {
+  color: var(--color-grey) !important;
+}

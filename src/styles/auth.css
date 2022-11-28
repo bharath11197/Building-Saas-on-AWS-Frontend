@@ -1,0 +1,121 @@
+.authPage {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100vh;
+  background-color: var(--color-primary);
+}
+
+.authPage__left {
+  background: url('../assests/nebula.jpg') no-repeat;
+  background-size: cover;
+  height: 100%;
+  background-position: center;
+  padding: 8rem;
+  border-top-right-radius: 4rem;
+  border-bottom-right-radius: 4rem;
+}
+
+.authPage__left--bg {
+  backdrop-filter: blur(.5rem);
+  height: 100%;
+  padding: 4rem;
+  background-color: #dbdada34;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-rows: 20% 1fr 20%;
+}
+
+.authPage__left--siteLogo {
+  font-size: 3rem;
+  padding: 2rem;
+  line-height: 1rem;
+  border: 1px solid rgba(224, 255, 255, 0.5);
+  color: #8d7c7c !important;
+  font-weight: 500;
+  background-color: #eeecec46;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: animateFromLeftToRight 1s ease-in-out;
+}
+
+
+.authPage__left--siteInfo {
+  margin-top: 5rem;
+  color: var(--color-black) !important;
+  text-align: center;
+  animation: animateFromRightToLeft 1s ease-in-out;
+}
+
+.authPage__left--navLink {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--color-grey);
+  font-size: 1.6rem;
+  margin: 0 auto;
+  animation: animateFromLeftToRight 1s ease-in-out;
+}
+
+
+.authPage__right {
+  padding: 20% 6rem;
+}
+
+.authPage__right--heading {
+  font-family: 'Poiret One', cursive;
+  font-size: 4rem;
+  line-height: 2.5rem;
+}
+
+.authPage__right--form {
+  border: var(--border-light);
+  padding: 4rem !important;
+  border-radius: 1rem;
+  background-color: var(--color-white);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 1rem 2rem rgba(32, 32, 32, 0.096);
+}
+
+.register__bg {
+  background-image: url('../assests/nebula_2.jpg');
+}
+
+.register__bg .authPage__left--siteLogo,
+.register__bg .authPage__right--heading,
+.register__bg span {
+  color: #fff !important;
+}
+
+.authPage__navLink {
+  justify-content: flex-end;
+  margin-bottom: 5px;
+  display: none;
+}
+
+@media screen and (max-width:900px) {
+  .authPage {
+    grid-template-columns: 1fr;
+  }
+
+  .authPage__left {
+    display: none;
+  }
+  .authPage__navLink {
+    display: flex;
+  }
+}
+
+@media (max-width:500px) { 
+  .authPage__right {
+    padding: 0 .5rem;
+    display: grid;
+    place-content: center;
+    text-align: center;
+  }
+  .authPage__right--form {
+    padding: 2rem !important;
+    width: 90vw;
+  }
+}
